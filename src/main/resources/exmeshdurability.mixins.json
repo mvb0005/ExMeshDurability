@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.mvb0005.exmeshdurability.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "exmeshdurability.refmap.json",
+  "mixins": [
+    "AbstractSieveBlockEntityMixin",
+    "MeshItemEnchantmentMixin",
+    "SieveLogicMixin"
+  ],
+  "client": [
+    "ItemBarMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

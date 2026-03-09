@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+issueTrackerURL="https://github.com/mvb0005/ExMeshDurability/issues"
+
+[[mods]]
+    modId="exmeshdurability"
+    version="${file.jarVersion}"
+    displayName="Ex Mesh Durability"
+    description='''
+Adds durability to Ex Deorum sieve meshes.  Each mesh type wears out after a
+configurable number of sieve uses and is then dropped at the sieve's position
+so it can be repaired or discarded.  Unbreaking enchantment is supported to
+extend mesh lifetime.
+'''
+    authors="mvb0005"
+
+[[dependencies.exmeshdurability]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.exmeshdurability]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.exmeshdurability]]
+    modId="exdeorum"
+    mandatory=true
+    versionRange="[1,)"
+    ordering="AFTER"
+    side="BOTH"
