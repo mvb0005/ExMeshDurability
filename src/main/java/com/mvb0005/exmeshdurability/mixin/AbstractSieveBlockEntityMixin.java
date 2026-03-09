@@ -7,6 +7,7 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.Shadow;
 
 /**
@@ -17,6 +18,7 @@ import org.spongepowered.asm.mixin.Shadow;
  * <p>The drop physics mirror Ex Deorum's own result-item spawning in
  * {@code AbstractSieveBlockEntity#handleResultItem}.</p>
  */
+@Pseudo
 @Mixin(targets = "thedarkcolour.exdeorum.blockentity.AbstractSieveBlockEntity", remap = false)
 public abstract class AbstractSieveBlockEntityMixin implements ISieveOwner {
 

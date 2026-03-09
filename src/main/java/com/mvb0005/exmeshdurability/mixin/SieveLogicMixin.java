@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantments;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -28,6 +29,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * {@code level/(level+1)} chance to skip the durability decrement entirely,
  * matching vanilla tool behaviour.</p>
  */
+@Pseudo
 @Mixin(targets = "thedarkcolour.exdeorum.blockentity.logic.SieveLogic", remap = false)
 public abstract class SieveLogicMixin {
 
