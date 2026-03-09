@@ -22,3 +22,29 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Gradle build output
+build/
+.gradle/
+
+# Forge MDK run directories
+run/
+
+# IDE project files
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+out/
+
+# ForgeGradle caches
+fg_cache/
+
+# Generated resources (data gen output)
+src/generated/
+
+# Mixin refmap (generated at build time)
+src/main/resources/exmeshdurability.refmap.json
