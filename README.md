@@ -29,6 +29,17 @@ Values mirror vanilla tool durability tiers so the progression feels natural.
 - Minecraft Forge **47.x**
 - [Ex Deorum](https://github.com/thedarkcolour/ExDeorum) (any 1.x build for 1.20.1)
 
+## Download the latest build
+
+Every push to the repository triggers a GitHub Actions build that produces the ready-to-use mod JAR.
+
+1. Open the [**Actions** tab](https://github.com/mvb0005/ExMeshDurability/actions/workflows/build.yml) of this repository.
+2. Click the most recent successful **Build** run.
+3. Scroll to the **Artifacts** section at the bottom of the run summary.
+4. Download the `ExMeshDurability-…` zip, unzip it, and copy the `.jar` file into your Minecraft `mods/` folder alongside Ex Deorum.
+
+The artifact is retained for **90 days** per run.
+
 ## Building from source
 
 ```bash
